@@ -2,10 +2,13 @@ import { Parse }     from 'parse/node';
 import * as triggers from '../triggers';
 
 function validateClassNameForTriggers(className) {
+  //Disabling following to do additional setup for signup complete
+  /*
   const restrictedClassNames = [ '_Session' ];
   if (restrictedClassNames.indexOf(className) != -1) {
     throw `Triggers are not supported for ${className} class.`;
   }
+  */
   return className;
 }
 
